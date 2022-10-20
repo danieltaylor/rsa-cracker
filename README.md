@@ -7,18 +7,22 @@ Note that there are probably better tools out there for whatever your needs may 
 
 ## Setup
 
-`pip3 install -r requirements`
+```
+git clone https://github.com/danieltaylor/rsa-cracker.git
+cd rsa-cracker
+pip install -r requirements.txt
+```
 
 
 ## Usage
 
-`python3 rsa_cracker.py`
+`python rsa_cracker.py`
 
 If executed without any args as shown above, the program will prompt for the setting of variables and selection of modes.
 
 Alternatively, arguments may be passed to the program in order to skip the menu or make it easier to repeat actions with similar values.
 
-See `python3 rsa_cracker.py --help` for more details:
+See `python rsa_cracker.py --help` for more details:
 
 ```
 usage: rsa_cracker.py [-h] [-m PLAINTEXT] [-c CIPHERTEXT] [-n MODULUS] [-e PUBLICEXP] [-d PRIVATEEXP] [-1] [-2] [-3]
@@ -45,11 +49,11 @@ options:
 
 ## Recommended Resources
 
+### Reading
+- https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+- https://www.quaxio.com/exploring_three_weaknesses_in_rsa/
+
 ### Other Tools
 - https://github.com/RsaCtfTool/RsaCtfTool
 - https://www.dcode.fr/rsa-cipher
 - http://www.factordb.com
-
-### Reading
-- https://en.wikipedia.org/wiki/RSA_(cryptosystem)
-- https://www.quaxio.com/exploring_three_weaknesses_in_rsa/
